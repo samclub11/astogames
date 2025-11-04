@@ -1,0 +1,384 @@
+/* ========== RESET GERAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: #04040a; /* escuro para destacar o neon verde */
+    color: #e6ffe6;            /* texto levemente esverdeado */
+    margin: 10px;
+}
+
+/* variáveis de cor neon */
+:root {
+    --neon: #00ff77;
+    --neon-weak: rgba(0,255,119,0.18);
+    --accent: #0af08a;
+    --card-bg: rgba(5,5,10,0.75);
+    --glass: rgba(255,255,255,0.03);
+}
+
+/* ========== HEADER / NAVEGAÇÃO ========== */
+header {
+    background: linear-gradient(90deg, #00122b, #00302b);
+    padding: 14px;
+    box-shadow: 0 2px 20px rgba(0,255,119,0.06);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,255,119,0.06);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.navbar input {
+    flex: 1;
+    margin: 6px 10px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,255,119,0.12);
+    background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(255,255,255,0.01));
+    color: #e6ffe6;
+    outline: none;
+    transition: box-shadow 0.18s, transform 0.18s;
+}
+
+.navbar input::placeholder {
+    color: rgba(230,255,230,0.45);
+}
+
+.navbar input:hover,
+.navbar input:focus {
+    box-shadow: 0 0 18px var(--neon-weak);
+    transform: translateY(-1px);
+}
+
+.links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--neon);
+    font-weight: 700;
+    text-shadow: 0 0 6px rgba(0,255,119,0.12);
+    transition: color 0.15s, transform 0.12s;
+}
+
+.links a:hover {
+    color: #baffd6;
+    transform: translateY(-2px);
+}
+
+/* ========== TÍTULO PRINCIPAL ========== */
+.titulo {
+    text-align: center;
+    margin: 10px 0 18px 0;
+}
+
+.titulo h1 {
+    color: var(--neon);
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: 72px;
+    text-shadow: 0 0 18px rgba(0,255,119,0.16);
+    letter-spacing: 2px;
+}
+
+/* ========== BANNER PRINCIPAL ========== */
+.banner {
+    padding: 18px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(0,8,0,0.4), rgba(2,10,20,0.5));
+    border: 1px solid rgba(0,255,119,0.06);
+    box-shadow: 0 8px 30px rgba(0,255,119,0.03);
+}
+
+.banner h2 {
+    color: var(--neon);
+    margin-bottom: 12px;
+    text-shadow: 0 0 10px rgba(0,255,119,0.10);
+}
+
+/* grid de banners (dois destaques) */
+.banner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+.banner-item {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.35));
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,255,119,0.06);
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.banner-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0,255,119,0.06);
+}
+
+.banner-item img {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.03);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+.banner-info h3 {
+    color: #bfffd6;
+    margin-bottom: 6px;
+}
+
+.jogodestaque {
+    color: rgba(230,255,230,0.9);
+    background: linear-gradient(90deg, rgba(0,0,0,0.28), rgba(255,255,255,0.01));
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,255,119,0.04);
+    margin-bottom: 8px;
+}
+
+.price {
+    color: var(--neon);
+    font-weight: 800;
+    margin: 6px 0;
+}
+
+.price .off {
+    color: #ff7b7b;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+/* botão neon */
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, var(--neon), #9affc9);
+    color: #00120a;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 8px 30px rgba(0,255,119,0.12), 0 0 8px rgba(0,255,119,0.08) inset;
+    transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px rgba(0,255,119,0.16);
+}
+
+/* ========== PROMOÇÕES DE PRIMAVERA ========== */
+.catalogo-promocoes {
+    margin-top: 26px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(0,40,0,0.22), rgba(0,0,0,0.18));
+    border: 1px solid rgba(0,255,119,0.06);
+}
+
+.catalogo-promocoes h2 {
+    color: #bfffd6;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+/* grid para promoções */
+.catalogo-promocoes .jogos {
+    display: inline-block;
+    width: 220px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.45));
+    margin: 8px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,255,119,0.06);
+    vertical-align: top;
+    transition: transform 0.14s, box-shadow 0.14s;
+}
+
+.promo-card img {
+    
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.catalogo-promocoes .jogos:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,255,119,0.06);
+}
+
+.catalogo-promocoes del {
+    color: #ff8b8b;
+    margin-right: 6px;
+}
+
+.catalogo-promocoes strong {
+    color: var(--neon);
+    font-weight: 900;
+}
+
+/* ========== CATÁLOGO PRINCIPAL ========== */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-top: 24px;
+    padding: 18px;
+}
+
+.catalogo h2 {
+    grid-column: 1 / -1;
+    color: #bfffd6;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+/* bloco de cada jogo */
+.jogos {
+    background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(5,5,5,0.42));
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,255,119,0.06);
+    text-align: center;
+    transition: transform 0.14s, box-shadow 0.14s;
+}
+
+.jogos img {
+    
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+.jogos p {
+    margin: 6px 0;
+    color: #dfffe6;
+}
+
+.jogos:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,255,119,0.05);
+}
+
+/* ========== SOBRE ========== */
+.sobre {
+    background: linear-gradient(90deg, rgba(0,8,0,0.12), rgba(0,0,0,0.12));
+    border-radius: 10px;
+    padding: 28px;
+    margin-top: 28px;
+    text-align: center;
+    border: 1px solid rgba(0,255,119,0.04);
+}
+
+.sobre h2 {
+    color: var(--neon);
+    margin-bottom: 10px;
+}
+
+
+/* ========== RODAPÉ ========== */
+footer {
+    background: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,12,12,0.6));
+    text-align: center;
+    padding: 18px;
+    margin-top: 28px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,255,119,0.04);
+}
+
+footer .pagamentos img {
+    width: 44px;
+    margin: 6px;
+    filter: drop-shadow(0 6px 14px rgba(0,255,119,0.06));
+}
+
+footer .logos i {
+    margin: 5px;
+    font-size: 1.4rem;
+    color: var(--neon);
+}
+
+/* Suporte formulario */
+.suporte {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.suporte label {
+  font-weight: bold;
+  color: #00ffcc;
+  
+}
+
+.sp {
+  background: #0f0f20;
+  border: 2px solid #00ff88;
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+
+}
+
+.sp:focus {
+  border-color: #00ffaa;
+  box-shadow: 0 0 8px #00ffaa;
+}
+/* Tela de login */
+.login{
+    background-color: transparent;
+    backdrop-filter: blur(0.8);
+    padding: 100px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border-radius: 25px;
+    border: solid #00ff88;;
+    margin-top: 5%;
+    
+}
+
+
+.login input{
+    padding: 20px;
+    margin-bottom: 30px;
+    outline: none;
+    border-radius: 30px;
+    text-align: center;
+    width: 100%;
+
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 900px) {
+    .titulo h1 { font-size: 56px; }
+    .banner-item img { width: 100px; height: 140px; }
+    .promo-card img { height: 120px; }
+}
+
+@media (max-width: 600px) {
+    .titulo h1 { font-size: 44px; }
+    .banner-grid { grid-template-columns: 1fr; }
+    .catalogo { grid-template-columns: 1fr; padding: 10px; }
+    .catalogo-promocoes .jogos { width: 100%; display: block; margin: 10px 0; }
+}

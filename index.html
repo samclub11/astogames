@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Aston Games - Loja</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="./logo/aston_games_logo.png" type="image/png">
+</head>
+<body>
+    <!-- CABEÇALHO / NAVEGAÇÃO  -->
+    <header>
+        <nav class="navbar">
+            <div class="links">
+                <a href="index.html"><i class="bi bi-bag-fill"></i> Loja</a>
+                <a href="./jogos.html"><i class="bi bi-joystick"></i> Jogos</a>
+                <a href="#sobre"><i class="bi bi-info-circle"></i> Sobre</a>
+            </div>
+
+            <input type="text" placeholder="Buscar jogos...">
+
+            <div class="links">
+                <a href="./login.html"><i class="bi bi-person-circle"></i> Logar</a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <!--  TÍTULO PRINCIPAL  -->
+    <section class="titulo">
+        <h1>ASTON GAMES</h1>
+    </section>
+
+    <!-- BANNER PRINCIPAL (GTA V + Cyberpunk)  -->
+    <section class="banner">
+        <h2>Promoção da Semana — até 50% off!</h2>
+
+        
+        <div class="banner-grid">
+            <!-- GTA V destaque -->
+            <article class="banner-item">
+              
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png"
+                     alt="GTA V capa" loading="lazy">
+                <div class="banner-info">
+                    <h3>Grand Theft Auto V</h3>
+                    <p class="jogodestaque">
+                        Mundo aberto em Los Santos, com três protagonistas e ação cinematográfica.
+                    </p>
+                    <p class="price">R$ 75,55 <span class="off">-50%</span></p>
+                    
+                    
+                   
+                    <a class="btn" href="#">Comprar Agora</a>
+                </div>
+            </article>
+
+            <!-- Cyberpunk 2077 destaque -->
+            <article class="banner-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg"
+                     alt="Cyberpunk 2077 capa" loading="lazy">
+                <div class="banner-info">
+                    <h3>Cyberpunk 2077</h3>
+                    <p class="jogodestaque">
+                        Futuro sombrio, escolhas difíceis e mundo aberto neon — a cara do verde neon!
+                    </p>
+                    <p class="price">R$ 119,99 <span class="off">-40%</span></p>
+                    <a class="btn" href="#">Ver Oferta</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!--  PROMOÇÕES DE PRIMAVERA  -->
+    
+    <section id="promocoes" class="catalogo-promocoes">
+        <h2>Promoções de Primavera</h2>
+
+        <!-- Promo 1 -->
+        <div class="jogos promo-card">
+            <p>The Witcher 3: Wild Hunt</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="The Witcher 3">
+            <p><del>R$ 99,99</del> <strong>R$ 49,99</strong></p>
+            
+            <button class="btn">Comprar</button>
+        </div>
+
+        <!-- Promo 2 -->
+        <div class="jogos promo-card">
+            <p>Red Dead Redemption 2</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" alt="RDR2">
+            <p><del>R$ 299,00</del> <strong>R$ 149,00</strong></p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <!-- Promo 3 -->
+        <div class="jogos promo-card">
+            <p>Resident Evil 4 (Remake)</p>
+            <img src="https://m.media-amazon.com/images/I/71C1sCQwi5L._AC_UF1000,1000_QL80_.jpg" alt="RE4">
+            <p><del>R$ 259,00</del> <strong>R$ 179,00</strong></p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <!-- Promo 4 -->
+        <div class="jogos promo-card">
+            <p>Cyberpunk 2077 (Deluxe)</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk Deluxe">
+            <p><del>R$ 199,99</del> <strong>R$ 119,99</strong></p>
+            <button class="btn">Comprar</button>
+        </div>
+        <!-- Promo 5 -->
+        <div class="jogos promo-card">
+        <p>Star Wars Jedi: Survivor</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/9/93/Star_Wars_Jedi_Survivor_capa.png" alt="Star Wars Jedi Survivor">
+        <p><del>R$ 249,90</del> <strong>R$ 149,90</strong></p>
+        <button class="btn">Comprar</button>
+    </div>
+        <!-- Promo 6 -->
+    <div class="jogos promo-card">
+        <p>Marvel’s Guardians of the Galaxy</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/9/91/Guardians_of_the_Galaxy_capa.png" alt="Guardians of the Galaxy">
+        <p><del>R$ 199,90</del> <strong>R$ 89,90</strong></p>
+        <button class="btn">Comprar</button>
+    </div>
+        <!-- Promo 7 -->
+    <div class="jogos promo-card">
+        <p>Watch Dogs: Legion</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/9/91/Watch_Dogs_Legion_cover_art.webp.png" alt="Watch Dogs Legion">
+        <p><del>R$ 199,90</del> <strong>R$ 79,90</strong></p>
+        <button class="btn">Comprar</button>
+    </div>
+        <!-- Promo 8 -->
+    <div class="jogos promo-card">
+    <p>Death Stranding</p>
+    <img src="https://upload.wikimedia.org/wikipedia/pt/e/eb/Death-Stranding-poster.jpg" alt="Death Stranding">
+    <p><del>R$ 199,90</del> <strong>R$ 89,90</strong></p>
+    <button class="btn">Comprar</button>
+</div>
+        <!-- Promo 9 -->
+<div class="jogos promo-card">
+    <p>Horizon Zero Dawn</p>
+    <img src="https://upload.wikimedia.org/wikipedia/pt/d/d0/Horizon_Zero_Dawn_capa.png" alt="Horizon Zero Dawn">
+    <p><del>R$ 199,90</del> <strong>R$ 99,90</strong></p>
+    <button class="btn">Comprar</button>
+</div>
+        <!-- Promo 10 -->
+<div class="jogos promo-card">
+    <p>Ghost of Tsushima</p>
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/b6/Ghost_of_Tsushima.jpg" alt="Ghost of Tsushima">
+    <p><del>R$ 249,90</del> <strong>R$ 149,90</strong></p>
+    <button class="btn">Comprar</button>
+</div>
+    <!-- Promo 11 -->
+<div class="jogos promo-card">
+    <p>Days Gone</p>
+    <img src="https://upload.wikimedia.org/wikipedia/pt/1/16/Days_Gone_cover_art.jpg" alt="Days Gone">
+    <p><del>R$ 199,90</del> <strong>R$ 89,90</strong></p>
+    <button class="btn">Comprar</button>
+</div>
+        <!-- Promo 12 -->
+<div class="jogos promo-card">
+    <p>Detroit: Become Human</p>
+    <img src="https://upload.wikimedia.org/wikipedia/pt/0/02/Detroit_Become_Human_capa.png" alt="Detroit Become Human">
+    <p><del>R$ 149,90</del> <strong>R$ 69,90</strong></p>
+    <button class="btn">Comprar</button>
+</div>
+
+     
+    </section>
+
+    <!-- ========== CATÁLOGO PRINCIPAL ========== -->
+    <section id="catalogo" class="catalogo">
+        <h2>🎮 Catálogo de Jogos</h2>
+
+        <div class="jogos">
+            <p>Halo Infinite</p>
+            <img src="./imagens/halo-infinite-capa-oficial.jpg" alt="Halo Infinite">
+            <p>R$ 119,99</p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <div class="jogos">
+            <p>Minecraft: Java Edition</p>
+            <img src="./imagens/Minecraft_capa.png" alt="Minecraft">
+            <p>R$ 99,00</p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <div class="jogos">
+            <p>Valorant</p>
+            <img src="./imagens/Valorant_capa.png" alt="Valorant">
+            <p>Gratuito</p>
+            <button class="btn">Jogar</button>
+        </div>
+
+        <div class="jogos">
+            <p>Forza Horizon 5</p>
+            <img src="./imagens/forza_horizon_5_capa.jpg" alt="Forza Horizon 5">
+            <p>R$ 249,00</p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <div class="jogos">
+            <p>God of War Ragnarök</p>
+            <img src="https://upload.wikimedia.org/wikipedia/pt/a/a5/God_of_War_Ragnar%C3%B6k_capa.jpg" alt="God of War Ragnarok">
+            <p>R$ 249,90</p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <div class="jogos">
+            <p>Call of Duty: Modern Warfare III</p>
+            <img src="https://upload.wikimedia.org/wikipedia/pt/8/8f/Modern_Warfare_3_Cover.jpg" alt="COD MW3">
+            <p>R$ 299,00</p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <div class="jogos">
+            <p>Elden Ring</p>
+            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/0d/Elden_Ring_capa.jpg/330px-Elden_Ring_capa.jpg" alt="Elden Ring">
+            <p>R$ 199,90</p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <div class="jogos">
+            <p>FIFA 23</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/FIFA_23_Cover.jpg" alt="FIFA 23">
+            <p>R$ 179,90</p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <div class="jogos">
+        <p>Fortnite</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkooVOmEKm88UWVz12d4inzqtkDITYjGUUmg&s" alt="Fortnite">
+        <p>Gratuito</p>
+        <button class="btn">Jogar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Assassin’s Creed Valhalla</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/e/e9/Assassins_Creed_Valhalla_capa.png" alt="AC Valhalla">
+        <p>R$ 189,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>The Witcher 3: Wild Hunt</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="The Witcher 3">
+        <p>R$ 79,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Spider-Man: Miles Morales</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/7/74/Spider-Man_Miles_Morales_capa.png" alt="Miles Morales">
+        <p>R$ 199,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Hogwarts Legacy</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/5/5a/Hogwarts_Legacy_capa.jpeg" alt="Hogwarts Legacy">
+        <p>R$ 249,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Need for Speed Unbound</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Need_for_Speed_Unbound.png/250px-Need_for_Speed_Unbound.png" alt="NFS Unbound">
+        <p>R$ 199,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Battlefield 2042</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/1/1f/Battlefield_2042_capa.jpg" alt="Battlefield 2042">
+        <p>R$ 199,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Rainbow Six Siege</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/7/78/Rainbow_six_siege_capa.jpg" alt="R6 Siege">
+        <p>R$ 89,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Apex Legends</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg" alt="Apex Legends">
+        <p>Gratuito</p>
+        <button class="btn">Jogar</button>
+    </div>
+
+    <div class="jogos">
+        <p>League of Legends</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7RFquH3dPl5c0jhKchYqcBc4LvYG67rPqIg&s" alt="LoL">
+        <p>Gratuito</p>
+        <button class="btn">Jogar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Dota 2</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/31/Dota_2_Steam_artwork.jpg" alt="Dota 2">
+        <p>Gratuito</p>
+        <button class="btn">Jogar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Overwatch 2</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/4/49/Overwatch_2.jpg" alt="Overwatch 2">
+        <p>Gratuito</p>
+        <button class="btn">Jogar</button>
+    </div>
+
+    <div class="jogos">
+        <p>CS2 (Counter-Strike 2)</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/CS2_Cover_Art.jpg" alt="CS2">
+        <p>Gratuito</p>
+        <button class="btn">Jogar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Destiny 2</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/9/98/Destiny_2_capa.jpg" alt="Destiny 2">
+        <p>Gratuito</p>
+        <button class="btn">Jogar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Far Cry 6</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/d/df/Far_Cry_6_capa.jpg" alt="Far Cry 6">
+        <p>R$ 199,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Mortal Kombat 1</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/9/9d/Mortal_Kombat_1_PS5_capa_digital.png" alt="Mortal Kombat 1">
+        <p>R$ 259,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Street Fighter 6</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/9/94/Street_Fighter_6_box_art.jpg" alt="Street Fighter 6">
+        <p>R$ 249,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Tekken 8</p>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/b/b4/Tekken_8_cover_art.jpg" alt="Tekken 8">
+        <p>R$ 259,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Among Us</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg" alt="Among Us">
+        <p>R$ 9,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+    <div class="jogos">
+        <p>Alan Wake 2</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg-izcDisnF7n4mc32GuvO5bAbXGBL1cj6-Q&s" alt="Alan Wake 2">
+        <p>R$ 229,90</p>
+        <button class="btn">Comprar</button>
+    </div>
+
+
+    </section>
+
+    <!--  SOBRE  -->
+    <section class="sobre" id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+            Na Aston Games, nossa missão é trazer os melhores jogos e promoções para todos os gamers.
+            Trabalhamos com paixão para oferecer uma experiência única, com preços acessíveis e suporte de qualidade.
+            A Melhor Loja De Todas ;)
+        </p>
+        <br><br>
+        <a href="formulario.html"><button class="btn">Entre em Contato</button></a>
+    </section>
+
+
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2025 Aston Games - Todos os direitos reservados</p>
+        
+        <div class="pagamentos">
+            <img src="./Pagamentos/pix.png" alt="PIX" loading="lazy">
+            <img src="./Pagamentos/visa.svg" alt="Visa" loading="lazy">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" loading="lazy">
+        </div>
+        <div class="logos">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-whatsapp"></i>
+        </div>
+    </footer>
+</body>
+</html>

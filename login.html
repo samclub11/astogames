@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo neon verde */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00ff88, #004d26);
+    background-size: 200% 200%;
+    animation: neonMove 6s ease infinite;
+    color: #00ff88;
+}
+
+/* Animação do gradiente */
+@keyframes neonMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container */
+.login-container {
+    background: rgba(0,0,0,0.9);
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+}
+
+/* Título */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #00ff88;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    border-color: #00ff88;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff88;
+}
+
+/* Forms */
+form {
+    display: none;
+    flex-direction: column;
+}
+
+form.active {
+    display: flex;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #00ff88;
+    outline: none;
+    font-size: 14px;
+    background: rgba(0,0,0,0.7);
+    color: #00ff88;
+    text-shadow: 0 0 5px #00ff88;
+    box-shadow: 0 0 5px #00ff88 inset;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88 inset;
+}
+
+/* Botão */
+form button {
+    padding: 12px;
+    background: #00ff88;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+form button:hover {
+    background: #00cc66;
+    box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+}
+
+/* Links */
+form .link {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #00ff88;
+    text-shadow: 0 0 5px #00ff88;
+}
+
+form .link:hover {
+    text-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Painel</h2>
+    <div class="tabs">
+        <div class="tab active" data-tab="login">Login</div>
+        <div class="tab" data-tab="cadastro">Cadastro</div>
+    </div>
+
+    <!-- Formulário de Login -->
+    <form id="login-form" class="active">
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+        <div class="link">Esqueceu a senha?</div>
+    </form>
+
+    <!-- Formulário de Cadastro -->
+    <form id="cadastro-form">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Senha" required>
+        <input type="password" placeholder="Confirmar senha" required>
+        <button type="submit">Cadastrar</button>
+        
+    </form>
+</div>
+
+<script>
+// Alternar abas
+const tabs = document.querySelectorAll('.tab');
+const loginForm = document.getElementById('login-form');
+const cadastroForm = document.getElementById('cadastro-form');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        if(tab.dataset.tab === 'login') {
+            loginForm.classList.add('active');
+            cadastroForm.classList.remove('active');
+        } else {
+            cadastroForm.classList.add('active');
+            loginForm.classList.remove('active');
+        }
+    });
+});
+</script>
+
+</body>
+</html>

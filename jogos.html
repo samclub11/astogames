@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<title>Minha Biblioteca - Jogos</title>
+<link rel="icon" href="./logo/aston_games_logo.png" type="image/png">
+<link rel="stylesheet" href="styles.css">
+ <header>
+        <nav class="navbar">
+            <div class="links">
+                <a href="index.html"><i class="bi bi-bag-fill"></i> Loja</a>
+                <a href="./jogos.html"><i class="bi bi-joystick"></i> Jogos</a>
+                
+            </div>
+
+            <input type="text" placeholder="Buscar jogos...">
+
+            <div class="links">
+                <a href="./login.html"><i class="bi bi-person-circle"></i></a>
+                
+            </div>
+        </nav>
+    </header>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: #04040a;
+    color: #00ff88;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+
+.library-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+.game-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+
+.game-card p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #00ff88;
+    text-shadow: 0 0 5px #00ff88;
+}
+
+
+.game-card button {
+    padding: 10px 15px;
+    background: #00ff88;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+.game-card button:hover {
+    background: #00cc66;
+    box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Minha Biblioteca</h1>
+    <div class="library-grid">
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/FIFA_23_Cover.jpg" alt="FIFA 23">
+            <p>FIFA 23</p>
+            <button>Baixar</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="GTA V">
+            <p>GTA V</p>
+            <button>Baixar</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="The Witcher 3">
+            <p>The Witcher 3</p>
+            <button>Baixar</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk 2077">
+            <p>Cyberpunk 2077</p>
+            <button>Baixar</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" alt="Red Dead Redemption 2">
+            <p>Red Dead Redemption 2</p>
+            <button>Baixar</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/7/74/Spider-Man_Miles_Morales_capa.png" alt="Spider-Man Miles Morales">
+            <p>Spider-Man: Miles Morales</p>
+            <button>Baixar</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg" alt="Elden Ring">
+            <p>Elden Ring</p>
+            <button>Baixar</button>
+        </div>
+
+        <div class="game-card">
+            <img src="./imagens/forza_horizon_5_capa.jpg" alt="Forza Horizon 5">
+            <p>Forza Horizon 5</p>
+            <button>Baixar</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/9/9d/Mortal_Kombat_1_PS5_capa_digital.png" alt="Mortal Kombat 1">
+            <p>Mortal Kombat 1</p>
+            <button>Baixar</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/d/df/Far_Cry_6_capa.jpg" alt="Far Cry 6">
+            <p>Far Cry 6</p>
+            <button>Baixar</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
